@@ -12,12 +12,10 @@
       </div>
       <button class="primary-btn" @click="loadUploadPage()">Let's Go</button>
     </div>
-    <WalletDetails></WalletDetails>
   </div>
 </template>
 
 <script setup>
-import WalletDetails from  "./WalletDetails.vue";
 import { onMounted } from "vue";
 import { generateMnemonic } from "bip39";
 import * as secrets from "secrets.js";

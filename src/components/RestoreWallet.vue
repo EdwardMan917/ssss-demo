@@ -4,12 +4,10 @@
       <textarea ref="partsInput" ></textarea>
       <button class="primary-btn" @click="restorePhrase()" >Restore</button>
     </div>
-    <WalletDetails></WalletDetails>
   </div>
 </template>
 
 <script setup>
-import WalletDetails from  "./WalletDetails.vue";
 import { ref, onMounted } from "vue";
 import * as secrets from "secrets.js";
 import { store } from "../store";
@@ -40,7 +38,7 @@ const restorePhrase = () => {
     router.push({ path:"/ssss-demo/" })
   } catch {
     console.log("GG Error");
-    Toast.success("Fail");
+    Toast.fail("Fail");
   }
 };
 
