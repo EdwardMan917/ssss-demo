@@ -38,10 +38,12 @@
       :disabled="!driveUploaded || !uploaded"
       @click="goHome()"
     >Done</van-button>
+    <WalletDetails></WalletDetails>
   </div>
 </template>
 
 <script setup>
+import WalletDetails from  "./WalletDetails.vue";
 import { ref, onMounted } from "vue";
 import { googleSdkLoaded } from "vue3-google-login";
 import { Toast } from 'vant';

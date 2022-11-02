@@ -4,10 +4,12 @@
       <textarea ref="partsInput" ></textarea>
       <button class="primary-btn" @click="restorePhrase()" >Restore</button>
     </div>
+    <WalletDetails></WalletDetails>
   </div>
 </template>
 
 <script setup>
+import WalletDetails from  "./WalletDetails.vue";
 import { ref, onMounted } from "vue";
 import * as secrets from "secrets.js";
 import { store } from "../store";
@@ -52,7 +54,9 @@ onMounted(() => {
 .main {
   min-width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   --van-button-primary-background-color: #00b7c2;
   --van-button-border-width: 0px;
   --van-button-primary-color: #323233;

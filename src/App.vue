@@ -5,7 +5,7 @@
 
 <script setup>
 import Header from "./components/Header.vue";
+import WalletDetails from  "./components/WalletDetails.vue";
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

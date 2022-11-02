@@ -75,6 +75,7 @@ button:focus-visible {
   margin: 0 auto;
   text-align: center;
   background-color: #000;
+  overflow: scroll;
 }
 
 @media (prefers-color-scheme: light) {
@@ -95,6 +96,10 @@ button:focus-visible {
 @primaryColor: #5ed8c8;
 @buttonColor: grey;
 @buttonTextColor: white;
+
+.main{
+  margin-top: @headerHeight;
+}
 
 .primary-btn{
   background-color: @primaryColor;

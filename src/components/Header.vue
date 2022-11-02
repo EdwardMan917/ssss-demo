@@ -38,7 +38,7 @@ const goBack = () => {
 <style lang="less" scoped>
 @import "../style.less";
 .header {
-  position: sticky;
+  position: fixed;
   height: @headerHeight;
   width: 100vw;
   top: 0;
@@ -47,6 +47,7 @@ const goBack = () => {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  z-index: 999;
 
   .title {
     line-height: @headerHeight;

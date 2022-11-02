@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="footer">
     <div class="phrase-section">
       <div class="title">Address</div>
       <div class="content">{{ store.address }}</div>
@@ -16,22 +16,18 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
 import { store } from "../store";
-
-onMounted(() => {
-  store.setPageTitle("Wallet Details");
-});
 </script>
 
 <style lang="less" scoped>
 @import "../style.less";
-.main {
+.footer {
   min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 30px;
   --van-button-primary-background-color: #00b7c2;
   --van-button-border-width: 0px;
   --van-button-primary-color: #323233;
