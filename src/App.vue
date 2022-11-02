@@ -1,13 +1,11 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import GenerateMnemonic from './components/GenerateMnemonic.vue'
-</script>
-
 <template>
-  <h2>Shamir Secret Sharing Scheme Demo</h2>
-  <GenerateMnemonic />
+  <Header></Header>
+  <router-view></router-view>
 </template>
+
+<script setup>
+import Header from "./components/Header.vue";
+</script>
 
 <style scoped>
 </style>

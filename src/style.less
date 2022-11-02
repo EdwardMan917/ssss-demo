@@ -74,6 +74,7 @@ button:focus-visible {
   min-height: 100vh;
   margin: 0 auto;
   text-align: center;
+  background-color: #000;
 }
 
 @media (prefers-color-scheme: light) {
@@ -86,5 +87,26 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@borderRadius: 10px;
+@headerHeight: 64px;
+@primaryColor: #5ed8c8;
+@buttonColor: grey;
+@buttonTextColor: white;
+
+.primary-btn{
+  background-color: @primaryColor;
+  color: white;
+  font-size: 16px;
+  border: none;
+
+  &:hover{
+    border: none;
+  }
+
+  &:focus{
+    outline: none;
   }
 }

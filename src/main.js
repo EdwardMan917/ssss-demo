@@ -1,13 +1,13 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-// 1. Import the components you need
-import { Button, Stepper, Toast } from 'vant';
-// 2. Import the components style
-import 'vant/lib/index.css';
+import { createApp } from "vue";
+import "./style.less";
+import App from "./App.vue";
+import { Button, Stepper, Toast } from "vant";
+import "vant/lib/index.css";
+import router from "./router";
 
 
 const app = createApp(App);
+app.use(router);
 app.use(Button);
 app.use(Stepper);
 app.use(Toast);
